@@ -1,0 +1,63 @@
+<template name="layout">
+
+<head>
+  <title>1-wall</title>
+</head>
+
+{{> yield "navbar"}}
+{{> yield "first"}}
+{{> yield "second"}}
+
+<body>
+</body>
+</template>
+<template name="instruction">
+
+<h1>Welcome to 1wall--a simple drawing machine, this is the home page.
+click "Wall" to begin drawing!</h1>
+
+
+
+
+</template>
+
+<template name="wall">
+
+	
+
+  Click clear to erase all the content, you can choose the circle and rectangle to add colourful circles and rectangles
+  <h1>{{title}}</h1>
+  <button class='clear'>Clear</button><br/><br/>
+  <button class='line'>Line</button>
+  <button class='thicker'>Thicker</button>
+  <button class='thinner'>Thinner</button>
+  <br/><br/>Shape:
+  <button class='circle'>Circle</button>
+  <button class='rectangle'>Rectangle</button>
+  <br/><br/>Color:
+  <button class='silver'>Silver</button>
+  <button class='peru'>Peru</button>
+  <button class='palegreen'>Palegreen</button>
+  <button class='orange'>Orange</button>
+  <button class='lightpink'>Lightpink</button>
+  <button class='lightblue'>Lightblue</button>
+  <button class='hotpink'>Hotpink</button>
+  <button class='red'>Red</button>
+  <button class='blue'>Blue</button>
+  <button class='green'>Green</button>
+  <button class='black'>Black</button>
+  <button class='chocolate'>Chocolate</button>
+  <button class='gold'>Gold</button>
+  <button class='tomato'>Tomato</button>
+  <button class='white'>White</button>
+  <button class='purple'>Purple</button>
+	<br/>Click save button to save the image
+	<button class="save">Save as Image</button>
+
+
+</template>
+
+<template name="canvas">
+
+	<div id='canvas'></div>
+</template>
